@@ -1,6 +1,17 @@
 services:
+  configserver:
+    image: "ahmed7ismail/configserver:d3"
+    container_name: configserver-ms
+    ports:
+      - "8071:8071"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - ahmed7ismail
   accounts:
-    image: "ahmed7ismail/accounts:d2"
+    image: "ahmed7ismail/accounts:d3"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -11,7 +22,7 @@ services:
     networks:
       - ahmed7ismail
   loans:
-    image: "ahmed7ismail/loans:d2"
+    image: "ahmed7ismail/loans:d3"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -22,7 +33,7 @@ services:
     networks:
       - ahmed7ismail
   cards:
-    image: "ahmed7ismail/cards:d2"
+    image: "ahmed7ismail/cards:d3"
     container_name: cards-ms
     ports:
       - "9000:9000"
