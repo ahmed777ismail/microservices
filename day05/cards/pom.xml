@@ -172,7 +172,7 @@
                 <version>3.5.1</version>
                 <configuration>
                     <to>
-                        <image>ahmed7ismail/${project.artifactId}:d3</image>
+                        <image>ahmed7ismail/${project.artifactId}:d5</image>
                     </to>
                 </configuration>
             </plugin>
